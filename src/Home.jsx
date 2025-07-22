@@ -28,10 +28,6 @@ export default function Home() {
     ]);
     localStorage.setItem("todoList", JSON.stringify(todoList));
   }
-  function handleClickDelete() {
-    setTodoList([]);
-    localStorage.setItem("todoList", JSON.stringify(todoList));
-  }
   return (
     <Page>
       <Header />
