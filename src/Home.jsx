@@ -3,7 +3,6 @@ import Cards from "./CardsTodo";
 import ButtonAdd from "./ButtonAddToDo";
 import Page from "./Page";
 import { useEffect, useState } from "react";
-import ButtonDelete from "./ButtonDeleteAllTodo";
 
 export default function Home() {
   const [todoList, setTodoList] = useState(() => {
@@ -37,11 +36,6 @@ export default function Home() {
     <Page>
       <Header />
       <Cards todoList={todoList} />
-      <ButtonDelete
-        onClick={handleClickDelete}
-        text="-"
-        className="fixed bottom-4 right-2 lg:right-70 lg:bottom-80"
-      />
       <ButtonAdd
         onClick={handleClickAdd}
         text="+"
