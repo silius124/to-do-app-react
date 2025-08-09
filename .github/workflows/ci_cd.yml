@@ -1,4 +1,4 @@
-name: FilmSpot
+name: todo-react
 run-name: ${{ github.actor }} is testing github actions
 on:
   push:
