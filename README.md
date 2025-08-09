@@ -1,12 +1,85 @@
-# React + Vite
+# To-Do App React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Минималистичное приложение для ведения списка задач, реализованное на React. Это простой и лаконичный проект, идеально подходящий для изучения основ React — работы с состоянием, JSX, взаимодействия с локальным хранилищем и т.д.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ​ Описание
 
-## Expanding the ESLint configuration
+- Удобный интерфейс для добавления, удаления и отметки задач как выполненных.
+- Задачи сохраняются в `localStorage`, так что они сохраняются между сессиями.
+- Строгая простота и минимализм дизайна.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+##  Функции
+
+- **Добавление задач** — ввод названия и описания, создание новой задачи.
+- **Удаление задач** — удаление ненужных элементов.
+- **Редактирование задач** - редактирование, исправление названиия задачи
+- **Отметка выполнения** — переключение статуса задачи.
+- **Сохранение в браузере** — данные сохраняются между перезагрузками благодаря `localStorage`.
+
+---
+
+##  Технологии
+
+- `React` — UI и управление состоянием.
+- `localStorage` — для долговременного хранения задач на клиенте.
+
+---
+
+##  Установка и запуск
+
+1. Клонируй репозиторий:
+    ```bash
+    git clone https://github.com/silius124/to-do-app-react.git
+    cd to-do-app-react
+    ```
+2. Установи зависимости:
+    ```bash
+    npm install
+    ```
+    или
+    ```bash
+    yarn
+    ```
+3. Запусти проект:
+    ```bash
+    npm start
+    ```
+    или
+    ```bash
+    yarn start
+    ```
+4. Открой приложение в браузере: [http://localhost:3000](https://silius124.github.io/to-do-app-react/)
+
+---
+
+##  Как это работает
+
+- **Состояние задач** хранится в React (через `useState`)
+- При каждом изменении список задач обновляется в `localStorage`.
+- При перезагрузке страницы приложение загружает задачи из `localStorage`.
+
+---
+
+##  Предложения по улучшению (Roadmap)
+
+- Редактирование задачи (изменение названия или описания).
+- Фильтрация задач: отображение всех / только активных / только выполненных.
+- Поддержка drag-and-drop для упорядочивания списка.
+- Синхронизация с сервером или реализация backend (например, через REST API).
+- Темная/светлая тема (Light & Dark mode).
+
+---
+
+##  Цель проекта
+
+Этот репозиторий — отличный старт для начинающих фронтенд-разработчиков. Здесь можно тренироваться и расширять функционал: подключить аутентификацию, real-time обновления, интеграцию с базой данных — и многое другое.
+
+---
+
+##  Лицензия
+
+MIT — свободное использование на твоё усмотрение.
