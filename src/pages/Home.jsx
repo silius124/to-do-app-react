@@ -1,7 +1,7 @@
-import Header from "./Header";
-import Cards from "./CardsTodo";
-import ButtonAdd from "./ButtonAddToDo";
-import Page from "./Page";
+import Header from "../components/Header";
+import Cards from "../components/CardsTodo";
+import ButtonAdd from "../components/ButtonAddToDo";
+import Page from "../components/Page";
 import { useEffect, useState } from "react";
 
 export default function Home() {

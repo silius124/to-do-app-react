@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ButtonTodo from "./ButtonTodo";
+import ButtonTodo from "../components/ButtonTodo";
 
 export default function ButtonAdd({ className, onClick, text }) {
   const [isOpen, setIsOpen] = useState(false);

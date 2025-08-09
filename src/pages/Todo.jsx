@@ -1,5 +1,5 @@
-import Header from "./Header";
-import Page from "./Page";
+import Header from "../components/Header";
+import Page from "../components/Page";
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 export default function AddToDo() {
